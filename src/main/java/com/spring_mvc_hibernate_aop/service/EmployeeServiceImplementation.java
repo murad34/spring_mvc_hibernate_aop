@@ -28,4 +28,9 @@ public class EmployeeServiceImplementation implements EmployeeService{
         employeeDAO.saveEmployee(employee);
 
     }
+
+    @Override
+    public Employee getEmployee(int id) {
+        return employeeDAO.getEmployee(id);
+    }
 }
